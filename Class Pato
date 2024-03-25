@@ -1,0 +1,35 @@
+
+public class Pato {
+	private String nome;
+	private int ano;
+public Pato(String umNome,int umAno) {
+		this.nome = umNome;
+		this.ano = umAno;
+	}
+public String getNome(){
+		return nome;
+	}
+public int getAno(){
+		return ano;
+	}
+public void voa() {
+		System.out.println("O Pato voa");
+	}
+public void nada() {
+		System.out.println("O Pato nada");
+	}
+	public void quack(){
+		System.out.println("QUACK QUACK");
+	}
+@Override
+public String toString() {
+	String res = "Class" + "\n";
+	res+= "Nome: "+ this.nome + "\n";
+	res+= "Nascimento: "+ this.ano + "\n";
+	return res;
+	
+	
+}
+
+	
+}
